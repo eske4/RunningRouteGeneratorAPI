@@ -7,9 +7,10 @@ import scripts.predict_user as pu
 import scripts.to_database as TD
 import urllib
 import random
+import os
 
 # Initialize Flask application
-api_key = ""  # Replace this with your actual Openrouteservice API key
+api_key = os.getenv("api_key_ors")  # Replace this with your actual Openrouteservice API key
 app = Flask(__name__)
 
 # Define a route for the home page
