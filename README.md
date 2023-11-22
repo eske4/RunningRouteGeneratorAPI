@@ -29,7 +29,7 @@ The front-end application triggers these commands by sending requests to the API
 An example of how a command are executed
 
 **Input:**
-yourdomainname.vercel.app/GetPois/56.717665/10.112082
+your-domain-name.vercel.app/GetPois/56.717665/10.112082
 
 **Output:**
 ```json
