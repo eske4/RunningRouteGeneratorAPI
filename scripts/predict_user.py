@@ -3,7 +3,7 @@ import os
 
 
 url = 'https://uoyylajbuvbqfsavvqme.supabase.co' # Replace with your own Supabase URL
-key = os.getenv("api_key_supabase") # Replace with your own Supabase api_key
+key = os.getenv("api_key_supabase") # Import your os key with the name api_key_supabase
 
 supabase: Client = create_client(url, key)
 
