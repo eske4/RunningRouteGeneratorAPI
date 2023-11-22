@@ -1,8 +1,8 @@
 from supabase import create_client, Client
 
 
-url = ''
-key = ''
+url = '' # Replace with your own Supabase URL
+key = '' # Replace with your own Supabase api_key
 
 supabase: Client = create_client(url, key)
 
