@@ -1,8 +1,8 @@
 from supabase import create_client, Client
 from . import predict_user as pu  # Importing predict_user module for additional functionality
 
-url = ''
-key = ''
+url = '' # Replace with your own Supabase URL
+key = '' # Replace with your own Supabase api_key
 
 supabase: Client = create_client(url, key)
 
