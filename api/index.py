@@ -10,7 +10,7 @@ import random
 import os
 
 # Initialize Flask application
-api_key = os.getenv("api_key_ors")  # import your os key with the name api_key_ors
+api_key = os.getenv("api_key_ors")  # Import your os key with the name api_key_ors
 app = Flask(__name__)
 
 # Define a route for the home page
