@@ -49,7 +49,7 @@ To recreate the API, follow these steps:
    - Visit the [OpenRouteService website](https://openrouteservice.org/) to obtain an API key.
 
 2. **Integrate OpenRouteService API Key:**
-   - Add the obtained key to `api_key = "your-key"` in the [index.py](api/index.py) file located at [api/](api/).
+   - Add the obtained key to an os environment called api_key_ors = your-api-key.
    - **Important:** When deploying publicly, avoid directly uploading sensitive keys. Instead, consider using environmental variables, like `api_key = os.environ.get('YOUR_API_KEY')`, to enhance security.
 
 3. **Configure Supabase for Database Functionality:**
@@ -68,7 +68,7 @@ To recreate the API, follow these steps:
      );
      ```
 
-   - In the [to_database.py](scripts/to_database.py) and [predict_user.py](scripts/predict_user.py) files located at [scripts/](scripts/), replace `key=""` with your Supabase database key and `url=""` with your Supabase URL. You can find the URL and API key in your project settings under API settings in Supabase.
+   - In the [to_database.py](scripts/to_database.py) and [predict_user.py](scripts/predict_user.py) files located at [scripts/](scripts/), replace `url=""` with your Supabase URL afterwards create an os environment key called api_key_supabase = supabase-api-key. You can find the URL and API key in your project settings under API settings in Supabase.
    - **Important:** When deploying publicly, avoid directly uploading sensitive keys. Instead, consider using environmental variables, like `api_key = os.environ.get('YOUR_API_KEY')`, for increased security.
 
    If you do not wish to use the database functionality, you can comment out the relevant portions in [index.py](api/index.py):
