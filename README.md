@@ -1,6 +1,6 @@
 # Running Route Generator API
 
-This API serves as an intermediary between the OpenRouteService API and a Supabase-hosted database, providing various functionalities for the front-end application available [here](https://github.com/eske4/RunningRouteGeneratorClient).
+This API serves as an link between the OpenRouteService API and a Supabase-hosted database, providing various functionalities for the front-end application available [here](https://github.com/eske4/RunningRouteGeneratorClient).
 
 ## API Endpoints:
 
